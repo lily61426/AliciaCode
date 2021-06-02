@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+
+    <title>
+        只是, 光・影
+    </title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        /* 電腦版開始 */
+        @media screen and (min-width: 992px) {
+
+            html,
+            body {
+                height: 100%;
+                background-color: rgb(172, 172, 172);
+                font-size: 18px;
+                color: #828282;
+                ;
+                font-family: "思源黑體";
+                font-family: 'Times New Roman', Times, serif;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+
+            .container {
+                margin: 0px auto;
+                width: 85%;
+                position: relative;
+            }
+
+            .myheader {
+                height: 650px;
+                background-color: rgb(210, 158, 158);
+                background-image: url(pexels-lood-goosen-1235717.jpg);
+                background-size: cover;
+                background-position: 0px 760px;
+            }
+
+            .mylogo {
+                position: absolute;
+                top: 440px;
+                left: 143px;
+            }
+
+            .myslogen {
+                font-size: 1rem;
+                letter-spacing: 3px;
+                word-spacing: 5px;
+                color: rgb(220, 194, 150);
+                position: absolute;
+                top: 415px;
+                left: 150px;
+                text-transform: capitalize;
+            }
+
+            .mynav {
+                height: 50px;
+                background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.44) 50%, rgba(74, 74, 74, 0.516) 100%);
+                /* background-color: rgba(45, 45, 45, 0.673); */
+                position: absolute;
+                bottom: 120px;
+                border-top: rgba(211, 174, 92, 0.81) 4px double;
+                width: 100%;
+                top: 20px;
+                text-align: right;
+                letter-spacing: 3px;
+            }
+
+            .mynav div {
+                text-align: center;
+            }
+
+            .mynav a:link {
+                color: #6d6d6d;
+                font-size: 0.9rem;
+                text-decoration: none;
+                text-shadow: rgb(205, 205, 205) 1px 1px 3px;
+            }
+
+
+            .mask {
+                width: 150px;
+                overflow: hidden;
+                height: 40px;
+                display: inline-block;
+            }
+
+            .boxall:hover {
+                margin-top: -40px;
+            }
+
+            .boxall {
+                transition: 1s;
+            }
+
+            .box-a,
+            .box-b {
+                height: 20px;
+                padding: 10px;
+                color: rgb(220, 194, 150);
+                /* background-color: #fff; */
+            }
+
+            .box-b a {
+                color: ghostwhite;
+            }
+
+            .myaside {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                /* background-color: rgb(53, 53, 53); */
+                float: left;
+            }
+
+            .myaside p {
+                width: 90%;
+                letter-spacing: 3px;
+                line-height: 150%;
+                text-align: justify;
+            }
+
+            .myaside img {
+                margin: 20px 0px;
+                width: 90%;
+                height: auto;
+                border-bottom: rgba(211, 174, 92, 0.81) 8px solid;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            .myaside-a {
+                background-color: rgb(58, 58, 58);
+                /* border: 5px solid rgba(211, 174, 92, 0.81); */
+                padding: 10px;
+                color: #727272;
+                border-top-left-radius: 8px;
+                flex-grow: 1;
+                /* border-bottom:#000 2px dashed; */
+            }
+
+            .myaside-b {
+                background-color: rgb(58, 58, 58);
+                /* border: 5px solid rgba(211, 174, 92, 0.81); */
+                padding: 5px;
+                flex-grow: 1;
+                color: #727272;
+            }
+
+            .myaside p {
+                text-indent: 30px;
+                margin: 0px auto;
+            }
+
+
+            .mymain {
+                padding: 30px;
+                border-top-right-radius: 8px;
+                width: 70%;
+                background-color: rgb(0, 0, 0);
+                float: left;
+                box-sizing: border-box;
+            }
+
+            .mymain img {
+                width: 70%;
+                /* background-position: center center; */
+            }
+
+            .aa {
+                margin: 0px auto;
+                width: 90%;
+                text-align: justify;
+                letter-spacing: 2px;
+                line-height: 120%;
+            }
+
+            .footer {
+                padding: 30px 0px;
+                background-color: rgb(38, 38, 38);
+                clear: both;
+                text-align: center;
+            }
+
+            .footer a {
+                color: rgb(171, 171, 171);
+                text-decoration: none;
+            }
+
+            .footer p {
+                vertical-align: middle;
+            }
+
+            .footer img {
+                width: 40px;
+                height: auto;
+            }
+
+            .content-align {
+                display: flex;
+                align-items: stretch;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .picalign {
+                display: inline-block;
+                text-align: center;
+            }
+
+            .bottom-right {
+                width: 80px;
+                height: 80px;
+
+                text-align: center;
+                line-height: 80px;
+                position: fixed;
+                right: 0px;
+                bottom: 50px;
+                background-color: rgb(189, 153, 75);
+                border-bottom-left-radius: 10px;
+                border-top-left-radius: 10px;
+
+            }
+
+            h1 {
+                margin: 40px 0px 10px;
+                text-align: center;
+                letter-spacing: 10px;
+            }
+
+            h2 {
+                padding-bottom: 40px;
+                letter-spacing: 2px;
+
+            }
+
+            h3,
+            h4,
+            h5 {
+                margin: 20px 0px 10px;
+                text-align: center;
+                letter-spacing: 10px;
+            }
+
+            h3 {
+                margin: 30px;
+                color: rgba(211, 174, 92, 0.81);
+            }
+
+            h6 {
+                letter-spacing: 6px;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+
+        /* 電腦版結束 */
+
+
+        /* 平板版開始 */
+        @media screen and (min-width: 576px) and (max-width: 991px) {
+
+            html,
+            body {
+                height: 100%;
+                background-color: rgb(172, 172, 172);
+                font-size: 18px;
+                color: #828282;
+                ;
+                font-family: "思源黑體";
+                font-family: 'Times New Roman', Times, serif;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+
+            .container {
+                margin: 0px auto;
+                width: 100%;
+
+                position: relative;
+            }
+
+            .myheader {
+                height: 480px;
+                background-color: rgb(210, 158, 158);
+                background-image: url(pexels-lood-goosen-1235717.jpg);
+                background-size: cover;
+                background-position: 0px 0px;
+            }
+
+            .mylogo {
+                position: absolute;
+                top: 55px;
+                left: 65px;
+            }
+
+            .myslogen {
+                font-size: 1rem;
+                letter-spacing: 3px;
+                word-spacing: 5px;
+                color: rgb(220, 194, 150);
+                position: absolute;
+                top: 122px;
+                left: 65px;
+                text-transform: capitalize;
+                font-weight: bolder;
+
+            }
+
+            .mynav {
+                width: 100%;
+                height: 55px;
+                background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.68) 25%, rgba(56, 55, 55, 0.516) 75%, rgba(34, 34, 34, 0.762) 100%);
+                /* background-color: rgba(45, 45, 45, 0.673); */
+                columns: 1;
+
+                border-top: rgba(211, 174, 92, 0.81) 9px double;
+                border-bottom: rgba(211, 174, 92, 0.81) 9px double;
+                top: 20px;
+                text-align: center;
+                letter-spacing: 3px;
+            }
+
+            .mynav div {
+                text-align: center;
+            }
+
+            .mynav a:link {
+                color: #6d6d6d;
+                font-size: 0.9rem;
+                text-decoration: none;
+                text-shadow: rgb(205, 205, 205) 1px 1px 3px;
+            }
+
+
+            .mask {
+                width: 150px;
+                overflow: hidden;
+                height: 48px;
+                display: inline-block;
+            }
+
+            .boxall:hover {
+                margin-top: -50px;
+            }
+
+            .boxall {
+                transition: 1s;
+            }
+
+            .box-a,
+            .box-b {
+                height: 20px;
+                padding: 15px;
+                color: rgb(220, 194, 150);
+                /* background-color: #fff; */
+            }
+
+            .box-b a {
+                color: ghostwhite;
+            }
+
+            .myaside {
+                margin-bottom: ;
+                width: 100%;
+                box-sizing: border-box;
+                display: flex;
+                /* background-color: rgb(53, 53, 53); */
+
+            }
+
+            .myaside p {
+                width: 350px;
+                letter-spacing: 3px;
+                line-height: 150%;
+                text-align: justify;
+            }
+
+            .myaside img {
+                margin: 20px 0px;
+                width: 90%;
+                height: auto;
+                border-bottom: rgba(211, 174, 92, 0.81) 8px solid;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            .myaside-a {
+                background-color: rgb(58, 58, 58);
+                /* border: 5px solid rgba(211, 174, 92, 0.81); */
+                padding: 15px;
+                color: #727272;
+                flex-grow: 1;
+                border-right: rgba(211, 173, 92, 0.372) 3px double;
+                /* border-bottom:#000 2px dashed; */
+            }
+
+            .myaside-b {
+                background-color: rgb(58, 58, 58);
+                /* border: 5px solid rgba(211, 174, 92, 0.81); */
+                padding: 15px;
+                flex-grow: 1;
+                color: #727272;
+            }
+
+            .myaside-a,
+            .myaside-b {
+                width: calc(50% - 5px);
+                float: left;
+                box-sizing: border-box;
+            }
+
+            .myaside p {
+                text-indent: 30px;
+                margin: 0px auto;
+            }
+
+
+            .mymain {
+                padding: 30px;
+                box-sizing: border-box;
+
+
+                background-color: rgb(0, 0, 0);
+
+            }
+
+            .mymain img {
+                width: 70%;
+                /* background-position: center center; */
+            }
+
+            .aa {
+                margin: 0px auto;
+                width: 90%;
+                text-align: justify;
+                letter-spacing: 2px;
+                line-height: 120%;
+            }
+
+            .footer {
+                padding: 30px 0px;
+                background-color: rgb(38, 38, 38);
+                clear: both;
+                text-align: center;
+            }
+
+            .footer a {
+                color: rgb(171, 171, 171);
+                text-decoration: none;
+            }
+
+            .footer p {
+                vertical-align: middle;
+            }
+
+            .footer img {
+                width: 40px;
+                height: auto;
+            }
+
+            /* .content-align {
+                display: flex;
+                align-items: stretch;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            } */
+
+            .picalign {
+                display: inline-block;
+                text-align: center;
+            }
+
+            .bottom-right {
+                width: 60px;
+                height: 60px;
+
+                text-align: center;
+                line-height: 60px;
+                position: fixed;
+                right: 0px;
+                bottom: 50px;
+                background-color: rgb(189, 153, 75);
+                border-bottom-left-radius: 10px;
+                border-top-left-radius: 10px;
+
+            }
+
+            h1 {
+                margin: 40px 0px 10px;
+                text-align: center;
+                letter-spacing: 10px;
+            }
+
+            h2 {
+                padding-bottom: 40px;
+                letter-spacing: 2px;
+
+            }
+
+            h3,
+            h4,
+            h5 {
+                margin: 20px 0px 10px;
+                text-align: center;
+                letter-spacing: 10px;
+            }
+
+            h3 {
+                margin: 30px;
+                color: rgba(211, 174, 92, 0.81);
+            }
+
+            h6 {
+                letter-spacing: 6px;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+
+        /* 平板版結束 */
+
+        /* 手機版開始 */
+        @media screen and (max-width: 575px) {
+
+            html,
+            body {
+                height: 100%;
+                background-color: rgb(172, 172, 172);
+                font-size: 18px;
+                color: #828282;
+                ;
+                font-family: "思源黑體";
+                font-family: 'Times New Roman', Times, serif;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+
+            .container {
+                margin: 0px auto;
+                width: 100%;
+
+                position: relative;
+            }
+
+            .myheader {
+                height: 200px;
+                background-color: rgb(210, 158, 158);
+                background-image: url(pexels-lood-goosen-1235717.jpg);
+                background-size: cover;
+                background-position: 0px 0px;
+            }
+
+            .mylogo {
+                position: absolute;
+                top: 30px;
+                display: none;
+            }
+
+            .myslogen {
+                font-size: 1.4rem;
+                letter-spacing: 3px;
+                word-spacing: 5px;
+                color: rgb(255, 255, 255);
+                position: absolute;
+                top: 38px;
+                left: 40px;
+                text-transform: capitalize;
+                font-weight: bolder;
+                text-shadow: #000 0px 0px 3px;
+            }
+
+            .mynav {
+                width: 100%;
+                height: 110px;
+                background-color: black;
+                /* background-color: rgba(45, 45, 45, 0.673); */
+                columns: 2;
+                border-top: rgba(211, 174, 92, 0.81) 9px double;
+                border-bottom: rgba(211, 174, 92, 0.81) 9px double;
+
+                text-align: center;
+                letter-spacing: 3px;
+            }
+
+            .mynav div {
+                text-align: center;
+            }
+
+            .mynav a:link {
+                color: #6d6d6d;
+                font-size: 0.9rem;
+                text-decoration: none;
+                text-shadow: rgb(205, 205, 205) 1px 1px 3px;
+            }
+
+
+            .mask {
+                width: 150px;
+                overflow: hidden;
+                height: 48px;
+                display: inline-block;
+            }
+
+            .boxall:hover {
+                margin-top: -50px;
+            }
+
+            .boxall {
+                transition: 1s;
+            }
+
+            .box-a,
+            .box-b {
+                height: 20px;
+                padding: 15px;
+                color: rgb(220, 194, 150);
+                /* background-color: #fff; */
+            }
+
+            .box-b a {
+                color: ghostwhite;
+            }
+
+            .myaside {
+                margin-bottom: ;
+                width: 100%;
+                box-sizing: border-box;
+
+                /* background-color: rgb(53, 53, 53); */
+
+            }
+
+            .myaside p {
+                width: 90%;
+                letter-spacing: 3px;
+                line-height: 150%;
+                text-align: justify;
+            }
+
+            .myaside img {
+                margin: 20px 0px;
+                width: 90%;
+                height: auto;
+                border-bottom: rgba(128, 128, 128, 0.81) 8px solid;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            .myaside-a {
+                background-color: rgb(58, 58, 58);
+                /* border: 5px solid rgba(211, 174, 92, 0.81); */
+                padding: 15px;
+                color: #d0d0d0;
+                flex-grow: 1;
+
+                border-bottom: rgb(79, 79, 79) 2px dashed;
+            }
+
+            .myaside-b {
+                background-color: rgb(58, 58, 58);
+                /* border: 5px solid rgba(211, 174, 92, 0.81); */
+                padding: 15px;
+                flex-grow: 1;
+                color: #d0d0d0
+            }
+
+            /* .myaside-a,
+.myaside-b {
+    width: calc(50% - 5px);
+    float: left;
+    box-sizing: border-box;
+} */
+
+            .myaside p {
+                text-indent: 30px;
+                margin: 0px auto;
+            }
+
+
+            .mymain {
+                padding: 30px;
+                box-sizing: border-box;
+                border-top: rgba(211, 174, 92, 0.81) 15px solid;
+
+                background-color: rgb(0, 0, 0);
+
+            }
+
+            .mymain img {
+                width: 95%;
+                /* background-position: center center; */
+            }
+
+            .aa {
+                margin: 0px auto;
+                width: 90%;
+                text-align: justify;
+                letter-spacing: 8px;
+                line-height: 140%;
+            }
+
+            .footer {
+                padding: 30px 0px;
+                background-color: rgb(38, 38, 38);
+                clear: both;
+                text-align: center;
+            }
+
+            .footer a {
+                color: rgb(171, 171, 171);
+                text-decoration: none;
+            }
+
+            .footer p {
+                vertical-align: middle;
+            }
+
+            .footer img {
+                width: 40px;
+                height: auto;
+            }
+
+
+
+            .picalign {
+                display: inline-block;
+                text-align: center;
+            }
+
+
+
+            h1 {
+                margin: 40px 0px 0px;
+                text-align: center;
+                letter-spacing: 10px;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+                letter-spacing: 2px;
+            }
+
+
+            h3,
+            h4,
+            h5 {
+                margin: 20px 0px 10px;
+                text-align: center;
+                letter-spacing: 7px;
+            }
+
+            h3 {
+                margin: 10px;
+                color: rgba(211, 174, 92, 0.81);
+            }
+
+            h6 {
+                letter-spacing: 6px;
+                display: inline-block;
+                text-align: center;
+            }
+
+            .coffee-dis {
+                display: none;
+            }
+        }
+
+        /* 手機版結束 */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="myheader">
+            <div class="mylogo">
+                <img src="logo4-02.png" alt="">
+            </div>
+            <div class="myslogen">
+                just light and dark.
+            </div>
+        </header>
+
+        <nav class="mynav">
+
+            <div class="mask">
+                <div class="boxall">
+                    <div class="box-a">About</div>
+                    <div class="box-b"><a href="">> 關於光・影</a></div>
+                </div>
+            </div>
+            <div class="mask">
+                <div class="boxall">
+                    <div class="box-a">News</div>
+                    <div class="box-b"><a href="">> 最新消息</a></div>
+                </div>
+            </div>
+            <div class="mask">
+                <div class="boxall">
+                    <div class="box-a">Coffee</div>
+                    <div class="box-b"><a href="">> 咖啡專區</a></div>
+                </div>
+            </div>
+            <div class="mask">
+                <div class="boxall">
+                    <div class="box-a">Contact</div>
+                    <div class="box-b"><a href="">> 聯絡我們</a></div>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="content-align">
+            <aside class="myaside">
+                <div class="myaside-a">
+
+                    <h3>最新活動</h3>
+                    <div class="picalign">
+                        <img src="pexels-arshad-sutar-1749303.jpg" alt="">
+                    </div>
+                    <br>
+                    <br>
+                    <p>是否還記得？那日，你喝著杯咖啡，手裡緩緩翻閱著那本“咀嚼”已久的書籍，那些字裡行間有著說不清處的吸引力，讓你反覆回味，每美重新翻閱總是有新收穫，美好的生活就是如此吧？
+                    </p>
+                    <br>
+                    <p>
+                        哪本書是你認為生命中必讀作品？你的那個午後又有什麼有趣的故事？來和我們分享那樣的故事吧！
+                    </p>
+
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+
+                <div class="myaside-b">
+                    <h3>新款品項</h3>
+                    <div class="picalign">
+                        <img src="pexels-drew-williams-3483967.jpg" alt="">
+                    </div>
+                    <br>
+                    <br>
+                    <div class="text-center">
+                        <p>光影精選印尼弗洛勒斯Flores產區豆種，豐沃的火山土質孕育了世界上獨一無二的咖啡風味。淡雅花香，溫潤清甜，尾韻帶有巧克力及木質調優雅香氣，風味優雅迷人，令人印象深刻。</p>
+
+                        <p> 咖啡豆經由國際咖啡品質鑑定學會CQI認證的專業鑑定師杯測篩選，入口伴隨胡桃木及黑巧克力的炭焙香氣，整體風味醇厚香甜，溫順平衡。
+
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+            </aside>
+
+
+            <main class="mymain">
+                <h1>只是,光・影</h1>
+                <h3>/ 品牌概念 /</h3>
+                <br>
+                <br>
+
+
+                <h4>
+                    <q>
+                        在一個艷陽的夏日午後，
+                        <br>
+                        光線透過樹梢穿過窗戶，
+                        <br>
+                        最後在地上散成了夢境，
+                        <br>
+                        那光景美得令人眨不開眼。
+                    </q>
+                </h4>
+                <br>
+                <br>
+
+                <div class="picalign">
+                    <img src="pexels-abo-adam-3876066.jpg" alt="">
+                </div>
+                <br>
+                <br>
+                <br>
+
+                <div class="aa">
+                    沒有太多雜想，只是一個簡單又純粹的靈光一閃罷了，這樣說又顯得太過得隨意？</div>
+
+                <div class="aa">『光影的概念一切都是在一個努力和文字比拼的午後。
+                    『「噠噠噠...」鍵盤輕輕地敲打聲，但還是難以掩藏「始作俑者」的不耐煩，一個可以低聲交談、算是清靜的咖啡廳才是創作者的好去處。無奈這大概是可遇不可求......</div>
+                <br>
+                <div class="aa">
+                    『來開一間咖啡廳吧！』一個聲音在腦中響起。
+
+                    當時正值高中時代，兩袖清風的設計系書生一枚。便把這道「光影」潛在心底，等待升起的最佳時刻。
+
+                </div>
+                <br>
+                <div class="aa">之所以能見其物是因為有光，有光便有影；光影的面貌極多，其中一種便是時間。如果把生活形容成時間軸，從數個影格裡取其一，那畫面又該是何其有趣？</div>
+
+                <br>
+                <br>
+            </main>
+        </div>
+
+        <footer class="footer">
+            <h2>
+                Just Light & Dark .
+                <span>Copyright &copy; </span>
+            </h2>
+            <h5>一道美好午後的光影，就在這裡</h5>
+            <p>
+            <h6>
+                <i class="fas fa-envelope" style="color:rgba(211, 174, 92, 0.81);"></i>
+                <a href="mailto:just_light_dark@gmail.com">just_light_dark@gmail.com</a>│
+            </h6>
+            <h6>
+                <i class="fas fa-phone-alt" style="color:rgba(211, 174, 92, 0.81);"></i>
+                <a href="tel:0222586282">02-2258-6282</a>│
+            </h6>
+            <h6>
+                <i class="fas fa-map-marker-alt" style="color:rgba(211, 174, 92, 0.81);"></i>
+                <a href="https://g.page/tw-totea?share" target="_blank">光影落腳處</a>
+            </h6>
+            </p>
+        </footer>
+
+        <div class="bottom-right"><i class="fas fa-coffee coffee-dis" style="color: rgb(77, 54, 54);"></i></div>
+
+    </div>
+
+</body>
+
+</html>
