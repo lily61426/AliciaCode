@@ -1,0 +1,301 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ----------------我的程式碼---------------- */
+.container {
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Ping;
+}
+
+header {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+h1 {
+    padding-top: 47px;
+    padding-bottom: 17px;
+    font-size: 80px;
+    line-height: 94px;
+}
+
+.pic-border {
+    padding: 48px 0;
+    border-top: black solid 2px;
+}
+
+.picture {
+    width: 324px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 43px;
+    padding-bottom: 8px;
+    border-bottom: solid 1px black;
+}
+
+h2 span {
+    margin-left: 10px;
+    color: #A00404;
+    font-size: 24px;
+}
+
+header p {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.profile {
+    padding: 16px 0px 24px 0px;
+
+}
+
+.profile2 {
+    padding: 0px 0px 82px 0px;
+
+}
+
+.profile3 {
+    padding: 0px 0px 72px 0px;
+}
+
+.profile4 {
+    padding: 0px 0px 24px 0px;
+}
+
+.profile5 {
+    margin-top: 16px;
+
+}
+
+aside {
+    margin-bottom: 82px;
+    padding: 24px 0px 36px 0px;
+    text-align: center;
+    background-color: #415165;
+    color: #fff;
+}
+
+div h3 {
+    margin: 0 auto 40px;
+    width: 996px;
+}
+
+h3 {
+
+    padding-bottom: 8px;
+    line-height: 45px;
+    font-size: 32px;
+    border-bottom: #fff solid 1px;
+}
+
+h3 span {
+    margin-left: 8px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+aside div p {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: lighter;
+}
+
+.border-r {
+    margin: 0 auto;
+    width: 218px;
+    padding-left: 24px;
+    border-left: #96A9C4 1px solid;
+    text-align: left;
+    line-height: 20px;
+}
+
+main {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+main p {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.main-border-r {
+    margin-left: 24px;
+    padding-left: 24px;
+    border-left: #96A9C4 1px solid;
+}
+
+main img {
+    padding: 18px 0px;
+
+}
+
+h4 {
+    width: 642px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 24px;
+}
+h5 {
+    width: 642px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+footer {
+    margin-top: 72px;
+    padding: 24px 0px 36px 0px;
+    text-align: center;
+    background-color: #415165;
+    color: #fff;
+}
+footer h3{
+    width:1200px ;
+}
+footer p{
+    padding-bottom:16px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: lighter;
+}
+.ig{
+    margin: 0px 24px;
+}
