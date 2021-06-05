@@ -201,8 +201,11 @@ header p {
 
 .profile5 {
     margin-top: 16px;
-
 }
+.profile6 {
+    margin-bottom: 40px;
+}
+/* ------------------------------------------ */
 
 aside {
     margin-bottom: 82px;
@@ -212,13 +215,13 @@ aside {
     color: #fff;
 }
 
-div h3 {
-    margin: 0 auto 40px;
+
+.title {
+    margin: 0 auto;
     width: 996px;
 }
 
 h3 {
-
     padding-bottom: 8px;
     line-height: 45px;
     font-size: 32px;
@@ -231,19 +234,21 @@ h3 span {
     line-height: 28px;
 }
 
-aside div p {
+aside ul li {
     font-size: 24px;
     line-height: 36px;
     font-weight: lighter;
 }
 
-.border-r {
+.skills-content {
     margin: 0 auto;
-    width: 218px;
+    width: 200px;
     padding-left: 24px;
     border-left: #96A9C4 1px solid;
-    text-align: left;
     line-height: 20px;
+}
+.skills-content li{
+    text-align: left;
 }
 
 main {
@@ -287,7 +292,8 @@ footer {
     background-color: #415165;
     color: #fff;
 }
-footer h3{
+.contact{
+    margin: 0 auto;
     width:1200px ;
 }
 footer p{
